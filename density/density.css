@@ -1,0 +1,73 @@
+#mapDensityContainer {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+#mapDensity {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Dosis;
+    line-height: 18px;
+}
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.info .num{
+    margin: 0 0 5px;
+    color: #FD8D3C  ;
+    font-weight: bold;
+}
+
+.info .txt{
+    margin: 0 0 20px;
+    color: #800026  ;
+    font-weight: bold;
+    text-align: center
+}
+
+.info i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+}
+
+.infoTitle {
+  display: table;
+  margin: 0 auto;
+}
+
+
+.mapBox {
+  border-radius:5px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255,255,255);
+  box-shadow: 1 1 5px rgba(0,0,0,0.2);
+
+  line-height: 20px;
+  font-family:verdana,sans-serif;
+  z-index: 10000;
+}
+
+.legend {
+    text-align: right;
+    line-height: 18px;
+    color: #555;
+}
+.legend i {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 8px;
+    opacity: 0.9;
+}

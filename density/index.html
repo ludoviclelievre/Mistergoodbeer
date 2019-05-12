@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <link href="density.css" rel="stylesheet">
+
+    <style>
+
+
+    </style>
+</head>
+<body>
+    <div id="mapDensityContainer">
+        <div id="mapDensity"/>
+
+        <div
+            class="info legend leaflet-control mapBox"
+            style="position:absolute; bottom:15px; right:10px; display:block; z-index:1000000;width:auto;"
+        >
+
+            Densité des bars MisterGoodBeer : <br>
+            <i style="background:#BD0026"></i> Plus de 40 bars<br>
+            <i style="background:#E31A1C"></i> Entre 20 et 40 bars<br>
+            <i style="background:#FC4E2A"></i> Entre 10 et 20 bars<br>
+            <i style="background:#FD8D3C"></i> Entre 5 et 10 bars<br>
+            <i style="background:#FED976"></i> Moins de 5 bars<br>
+            <i style="background:#D8D8D8"></i> Aucun bar répertorié<br>
+
+        </div>
+    </div>
+
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+    <script type="text/javascript" src="quartiers_precis_leaflet.geojson"></script>
+    <script type="text/javascript" src="density.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
