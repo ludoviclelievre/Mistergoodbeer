@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+    <link rel="stylesheet" href="metro.css" />
+    <link rel="stylesheet" href="segmented-control.css" />
+</head>
+<body>
+    <div id='mapContainer'>
+        <div id="map"/>
+        <div class="info legend leaflet-control mapBox moyenneLigne" style="">
+
+            Moyenne par ligne : <br>
+            <i><img src="image_num_ligne/M_4.png" class="images_petit" alt="ligne4" /></i>3,9€<br>
+            <i><img src="image_num_ligne/M_7.png" class="images_petit" alt="ligne7" /></i>4,0€<br>
+            <i><img src="image_num_ligne/M_2.png" class="images_petit" alt="ligne2" /></i><i><img src="image_num_ligne/M_3.png" class="images_petit" alt="ligne3" /></i><i><img src="image_num_ligne/M_11.png" class="images_petit" alt="ligne11" /></i>4,1€<br>
+
+        </div>
+
+        <div class="map-controls"  style='position:absolute; bottom:25px; left:20px; z-index:1000000;'>
+            <ul class="segmented-control">
+                <li class="segmented-control__item">
+                    <input class="segmented-control__input" type="radio" value="hap" name="controlHappy" id="option-1" checked onclick="getPrice()">
+                    <label class="segmented-control__label segment-left" for="option-1" >En happy</label>
+                </li>
+                <li class="segmented-control__item">
+                    <input class="segmented-control__input" type="radio" value="reg"   name="controlHappy" id="option-2" onclick="getPrice()">
+                    <label class="segmented-control__label segment-right" for="option-2" >Hors happy</label>
+                </li>
+            </ul>
+            <ul class="segmented-control">
+                <li class="segmented-control__item">
+                    <input class="segmented-control__input" type="radio" value="cheap" name="controlPrice" id="option-3" checked onclick="getPrice()">
+                    <label class="segmented-control__label segment-left" for="option-3" >Prix mini</label>
+                </li>
+                <li class="segmented-control__item">
+                    <input class="segmented-control__input" type="radio" value="mean" name="controlPrice" id="option-4" onclick="getPrice()">
+                    <label class="segmented-control__label segment-right" for="option-4" >Prix moyen</label> 
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+    <script type="text/javascript" src="line_ratp1.geojson"></script>
+    <script type="text/javascript" src="stations_ratp1.geojson"></script>
+
+    <script src='metro.js'></script>
+</body>
+</html>
+
+
+
+
+
+
+
